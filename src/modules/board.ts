@@ -1,7 +1,7 @@
 export class Board {
-  boardRef = null;
+  boardRef: HTMLElement;
 
-  constructor(boardRef) {
+  constructor(boardRef: HTMLElement) {
     this.boardRef = boardRef;
   }
 
@@ -22,4 +22,7 @@ export class Board {
 
     this.boardRef.appendChild(boardGrid);
   }
+}
+export interface GameModules {
+  board: Board;
 }
